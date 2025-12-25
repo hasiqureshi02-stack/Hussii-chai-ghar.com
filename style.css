@@ -1,4 +1,4 @@
- /* ===== BASIC ===== */
+/* ===== BASIC ===== */
 body{
   margin:0;
   font-family: Arial, sans-serif;
@@ -19,6 +19,7 @@ header{
   border-radius:50%;
   object-fit:cover;
   border:4px solid #4b0082;
+  transition:0.3s; /* smooth hover */
 }
 
 .logo:hover{
@@ -52,6 +53,7 @@ nav{
   background:#c498e4;
   border-top:3px dashed white;
   border-bottom:3px dashed white;
+  flex-wrap:wrap; /* responsive */
 }
 
 nav a{
@@ -84,15 +86,16 @@ h2{
 }
 
 h3{
-text-align: center;
+  text-align:center;
 }
+
 ul{
   list-style:none;
   padding:0;
 }
 
 li{
-  padding:6px 0;
+  padding:6px 0; /* typo fixed */
 }
 
 /* ===== ICONS ===== */
@@ -128,17 +131,30 @@ footer{
 
   nav{
     flex-direction:column;
+    gap:10px;
   }
 
   nav a{
-    margin:8px 0;
+    margin:5px 0;
   }
 
   iframe{
     height:250px;
   }
-}
 
+  header{
+    padding:30px 10px;
+  }
+
+  .logo{
+    width:100px;
+    height:100px;
+  }
+
+  #menu li, #contact p{
+    max-width:90%;
+  }
+}
 
 /* ===== MENU & CONTACT BUTTONS ===== */
 section#menu h3,
@@ -146,7 +162,7 @@ section#contact p{
   margin-bottom:15px;
 }
 
-/* Button look for Menu items */
+/* Menu items style */
 #menu li{
   background:rgb(247, 219, 219);
   margin:8px auto;
@@ -167,7 +183,7 @@ section#contact p{
   transform:scale(1.05);
 }
 
-/* Contact info buttons */
+/* Contact info style */
 #contact p{
   background:rgb(247, 221, 211);
   padding:12px 15px;
@@ -191,3 +207,11 @@ section#contact p{
 #contact p:hover img{
   filter:brightness(0) invert(1);
 }
+project-folder/
+ ├─ index.html
+ ├─ style.css
+ └─ images/
+      ├─ chai-ghar.png         ← Logo image
+      ├─ whatsapp-icon.png     ← WhatsApp icon
+      ├─ location-icon.png     ← Address/location icon
+      └─ message-icon.png      ← Timing/message icon
